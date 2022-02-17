@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <main class="container">    
+        
+        <h1 class="title">Code Quiz!!</h1>
+
+        <div id="question-container" class="hide">
+            <div id="question">Question</div>
+            <div id="answer-buttons" class="btn">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+            </div>
+        </div>
+
+        <!-- GAME BUTTONS -->
+        <section class="btn-wrapper">
+            <button class="start-btn">START!</button>
+        </section>
+
+        <!-- TIMER -->
+        <section class="timer-wrapper">
+            <h3 class="timer"></h3>
+        </section>
+
+        <div class="divider"></div>
+        <!-- SCORES LIST -->
+        <section class="scores-wrapper">
+            <ul class="scores-list">Current Scores!</ul>
+        </section>
+    </main>
+    <aside>
+        <div class="questions">
+        </div>
+    </aside>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
