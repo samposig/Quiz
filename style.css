@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid black;
-}
+} */
 
 body {
     width: 100vw;
@@ -33,13 +33,6 @@ body {
     margin: 0 auto;
 }
 
-.img-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 30vh;
-}
-
 .btn-wrapper {
     display: flex;
     justify-content: center;
@@ -55,10 +48,10 @@ body {
 }
 
 .timer-wrapper {
-    display: flex;
+    display: inline-block;
     justify-content: center;
     font-family: monospace;
-    margin: 40px 0;
+    margin: 10px 0;
 }
 
 .timer {

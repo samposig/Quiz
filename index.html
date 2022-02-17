@@ -11,40 +11,38 @@
 
 <body>
    
-    <main class="container">    
-        
+    
+    <main class="container">
+        <header>
+            <section class="timer-wrapper">
+            <h3 class="timer"></h3>
+        </section>
+        </header>    
         <h1 class="title">Code Quiz!!</h1>
-
-        <div id="question-container" class="hide">
-            <div id="question">Question</div>
-            <div id="answer-buttons" class="btn">
-                <button class="btn">Answer 1</button>
-                <button class="btn">Answer 2</button>
-                <button class="btn">Answer 3</button>
-                <button class="btn">Answer 4</button>
-            </div>
-        </div>
-
-        <!-- GAME BUTTONS -->
+    <!-- GAME BUTTONS -->
         <section class="btn-wrapper">
             <button class="start-btn">START!</button>
         </section>
+             <!-- TIMER -->
+        
 
-        <!-- TIMER -->
-        <section class="timer-wrapper">
-            <h3 class="timer"></h3>
-        </section>
+        <div class="que_text">
+            <span>What does HTML stand for?</span>
+        </div>
+        <div class="options_list">
+            <div class="option">
+                <span></span>
+            </div>
+        </div>
 
-        <div class="divider"></div>
+        
+            <div class="divider"></div>
         <!-- SCORES LIST -->
         <section class="scores-wrapper">
             <ul class="scores-list">Current Scores!</ul>
         </section>
     </main>
-    <aside>
-        <div class="questions">
-        </div>
-    </aside>
+
 
     <script src="script.js"></script>
 </body>
