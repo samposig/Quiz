@@ -10,41 +10,78 @@
 </head>
 
 <body>
-   
+    <div>
+        <h1>Highscores</h1>
+        <div id="highscores"></div>
+    </div>
     
-    <main class="container">
-        <header>
-            <section class="timer-wrapper">
-            <h3 class="timer"></h3>
-        </section>
-        </header>    
-        <h1 class="title">Code Quiz!!</h1>
-    <!-- GAME BUTTONS -->
-        <section class="btn-wrapper">
-            <button class="start-btn">START!</button>
-        </section>
-             <!-- TIMER -->
-        
-
-        <div class="que_text">
-            <span>What does HTML stand for?</span>
+    <div class="container" id="topic-choice" style="display: block;">
+      <div class="dropdown">
+    </div>
+    <div class="container" id="start-container" style="display: block;">
+      <div class="row">
+        <div class="col-md">
+          <h2>Coding Quiz </h2>
         </div>
-        <div class="options_list">
-            <div class="option">
-                <span></span>
-            </div>
+      </div>
+      <div class="row">
+        <div id="instructions" class="col-md wrap-text m-4 py-3">
+          <p>
+            > Click "Start" to begin. You will have 60 seconds to
+            answer three multiple choice quesitons about coding.<br />
+          </p>
+          <button class="btnStart" id="start-Btn" type="submit">Start</button>
         </div>
-
-        
-            <div class="divider"></div>
-        <!-- SCORES LIST -->
-        <section class="scores-wrapper">
-            <ul class="scores-list">Current Scores!</ul>
-        </section>
-    </main>
-
-
-    <script src="script.js"></script>
+    <div class="container" id="question-container" >
+      <div class="row">
+        <div class="col-md">
+          <h2 id="question-title"></h2>
+          <div id="answers" class="btn-group-vertical">
+             <ul>
+                 <li><button id="btn1"></button></li>
+                 <li><button id="btn2"></button></li>
+                 <li><button id="btn3"></button></li>
+                 <li><button id="btn4"></button></li>
+             </ul> 
+             <div id="Answer"></div>           
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="score-container" style="display: none">
+      <div class="row">
+        <div class="col-md">
+          <h2</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center mb-5">
+        <div class="col-md" id="final-score"></div>
+      </div>
+      <div class="row" id="submit-highscores" class="py-3">
+        <div class="col-md">
+          <h3 id="submissionLabel" class="my-4">Enter initials:</h3>
+        </div>
+        <div class="col-md">
+          <input
+            type="text"
+            placeholder="Enter Initials Here"
+            style="text-transform: uppercase"
+            class="my-4"
+            id="enter-initials"
+          />
+        </div>
+        <div class="col-md">
+          <input
+            type="submit"
+            id="submit-btn"
+            class="btn btn-info btn-block my-4"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div id="evaluate-answer-final"></div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
 </body>
-
 </html>

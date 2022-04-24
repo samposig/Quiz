@@ -1,6 +1,6 @@
 /* * {
-    border: 1px solid black;
-} */
+    background-color: lightgrey;
+}
 
 body {
     width: 100vw;
@@ -11,6 +11,9 @@ body {
     justify-content: center;
     align-items: center;
 }
+.buttons {
+    display: "none"
+}
 
 .title {
     text-align: center;
@@ -19,27 +22,14 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
  }
 
-.hide {
-    display: none;
-} 
-
-.container {
-    width: 76%;
-    overflow-x: hidden;
-    border-radius: 5px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-}
 
 .btn-wrapper {
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 40px 0;
 }
 
-.start-btn {
+.startBtn {
     background: blueviolet;
     color: white;
     font-size: 2rem;
@@ -57,7 +47,7 @@ body {
 .timer {
     text-align: center;
     font-size: 1.5rem;
-    color: rgb(164, 0, 0);
+    color: rgb(10, 10, 10);
 }
 
 .scores-wrapper {
@@ -68,4 +58,4 @@ body {
 .divider {
     width: 100%;
     border: 1px solid black;
-}
+} */
